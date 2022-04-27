@@ -1,0 +1,255 @@
+/* CSS Reset */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* CSS Variables */
+:root{
+    --navbar-height: 59px;
+}
+
+/* Navigation bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top:0px;
+    width: 100vw;
+    z-index: 10;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+/* Navigation bar: Logo and Image */
+#logo{
+    margin: 10px 15px;
+}
+
+#logo img{
+    height:56px;
+    margin: 4px 5px;
+    /* border-radius: 50%; */
+}
+
+/* Navigation bar: List Styling */
+
+#navbar ul {
+    display:flex;
+    font-family: 'Roboto', sans-serif;
+}
+#navbar ul li{
+    font-size: 1.3rem; 
+    list-style: none;     
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    border-radius: 20px;
+    margin:5px 5px;
+    padding: 5px 22px;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    /* text-shadow: 2px 2px 5px grey; */
+    font-weight: bolder;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 450px;
+    padding: 2px 200px;
+    /* padding-top: 87px; */
+}
+
+#home::before {
+    content: "";
+    background: url("../img/bg1.jpg") no-repeat center center/cover ;
+    position: absolute;
+    height: 542px;
+    top:0px;
+    left:0px;
+    width:100%;
+    z-index: -1; 
+    opacity: 0.9;
+    box-shadow: 0px 1px 8px rgb(190, 190, 190);
+}
+
+#home h1{
+    color:white;
+    text-align: center;
+    text-shadow: 2px 2px 5px grey;
+    font-family: 'Roboto', sans-serif;
+}
+
+#home p{
+    color:white;
+    text-align: center;
+    text-shadow: 2px 2px 5px grey;
+    font-size:1.5rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Services section */
+.services-container h1{
+    margin:25px;
+}
+#services{
+    display: flex;
+    margin: 34px;
+}
+
+#services .box{
+    /* border: 2px solid brown; */
+    padding: 34px;
+    margin: 0px 10px;
+    border-radius: 28px;
+    background: aliceblue;
+    margin-bottom: 20px;
+}
+#services .box img{
+    height: 160px;
+    /* transform: rotate(270deg); */
+    display: block;
+    margin: auto;
+}
+
+#services .box p{
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Client Section */
+#client-section{
+    position: relative;
+    height: 360px; 
+}
+
+#client-section::before{
+    content: "";
+    background-color: rgb(178, 219, 255);
+    height: 100%;
+    width:100%;
+    position: absolute;
+    z-index: -1;
+    box-shadow: 0px 0px 5px rgb(190, 190, 190);
+}
+
+#clients{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.client-item{
+    padding: 34px;
+}
+
+#clients img{
+    height:120px;
+}
+
+/* Contact Section */
+#contact{
+    position: relative;
+}
+
+#contact::before{
+    content: "";
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    position: absolute;
+    opacity: 1;
+    background: url("../img/bg.jpg") no-repeat center center/cover;
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-box input,
+#contact-box textarea{
+    padding: 0.5rem;
+    width: 100%;
+    border-radius: 9px;
+    font-size: 1.1rem;
+    border:none;
+    /* font-weight: bold; */
+    box-shadow: inset 0px 2px 5px rgb(190, 190, 190);
+}
+
+#contact-box form{
+    width:40%;
+}
+
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Roboto', sans-serif;
+    /* padding: 10px; */
+}
+
+footer{
+    background-color: rgb(0, 47, 77);
+    color:white;
+    padding: 20px 20px;
+}
+
+/* footer div{
+    font-stretch: extra-expanded;
+    
+} */
+
+
+
+/* Utility classes */
+.h-primary{
+    font-size:3.8rem;
+    padding: 12px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.h-secondary{
+    font-size:2.3rem;
+    padding: 12px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.btn{
+    background-color: rgb(0, 47, 77);
+    color: white;
+    font-size: 1.5rem;
+    /* border: 4px solid white; */
+    padding: 6px 22px;
+    margin: 24px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px grey;
+    cursor: pointer;
+}
+
+.center{
+    text-align: center;
+}
