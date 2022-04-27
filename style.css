@@ -200,6 +200,7 @@ html{
     border:none;
     /* font-weight: bold; */
     box-shadow: inset 0px 2px 5px rgb(190, 190, 190);
+    opacity: 0.8;
 }
 
 #contact-box form{
